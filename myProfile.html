@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JJANDDAK :: Welcome !</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<style>
+    body{
+        background-color:#f9f9f9;
+    }
+
+    .contentWrapper{
+        width: 100%; 
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #profileImage{
+		width: 250px;
+		height: 250px;
+    /* 프로필사진 둥글게 */
+		border-radius: 50%;
+	}
+     
+    table.profileTable{
+        width: 300px; 
+        margin: 10px auto;
+        text-align: center;
+    }
+    table tr td{
+        border-color: cornflowerblue;
+        border-style: dotted;
+    }
+    table.profileTable tr{
+        height: 50px;
+    }
+
+    div.cat img{
+        width: 25%;
+        position: fixed;
+        left: 200px;
+        top: 350px;
+    }
+
+    div.cat span{
+        width: 25%;
+        position: fixed;
+        left: 200px;
+        top: 350px;
+    }
+
+    div.cat2 img{
+        width: 25%;
+        position: absolute;
+        left: 1200px;
+        top: 350px;
+    }
+
+    div.cat2 p{
+        width: 25%;
+        position: absolute;
+        left: 1200px;
+        top: 350px;
+    }
+
+    div.contentWrapper #cat3{
+        width: 25%;
+        position: relative;
+    }
+    
+</style>
+</head>
+<body>
+<div class="cat">
+    <img class="cat" src="https://www.tiredearth.com/sites/default/files/Upload/2018Tyson%20LizotteAuthor/aa.jpg" />
+    <span>
+        position: fixed;
+    </span>
+</div>
+
+<div class="cat2">
+    <img src="https://pbs.twimg.com/profile_images/1151916124474183680/2iZykkYm_400x400.png"/>
+    <p>
+        position: absolute;
+    </p>
+</div>
+
+<div class="contentWrapper">
+    <img id="profileImage" style="-webkit-user-select: none;margin: auto;" 
+    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/67643773_1144954732371082_4453933841035296768_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=BWJxBjpUcZgAX-jP0Q1&oh=3430da4edb2895d4fc92db5269f4ed32&oe=5F90F3A7">
+    
+    <h3>
+        github : JJANDDAK
+        <a href="https://github.com/jjanddak" target="_blank">
+            <img style="width: 3%;" src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" />
+        </a>
+    </h3>
+    
+    
+    <h3>인적사항</h3>
+    <table class="profileTable">
+        <tr>
+            <td>
+                <div>이름</div>
+            </td>
+            <td>
+                <div>백종혁</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>나이</div>
+            </td>
+            <td>
+                <div>26</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>거주지</div>
+            </td>
+            <td>
+                <div>서울, 대한민국</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>장래희망</div>
+            </td>
+            <td>
+                <div>풀스택 개발자</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                LIKE
+            </td>
+            <td>
+                고양이
+            </td>
+        </tr>
+    </table>
+    
+</br>
+    
+    <h3>학력사항</h3>
+
+    <table class="profileTable">
+        <tr>
+            <td>
+                <div>최종학력</div>
+            </td>
+            <td>
+                <div>고등학교 졸업</div>
+            </td>
+        </tr>
+    </table>
+
+</br>
+
+    <h3>경력사항</h3>
+    <table class="profileTable">
+        <tr>
+            <td>
+                <div>
+                    에이콘 아카데미 JAVA 개발 & 안드로이드 개발자 양성과정</br>
+                    (2019-10-28 ~ 2020-04-14)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn btn-warning">
+                    <a href="https://docs.google.com/presentation/d/1aFwSMPt0UhCZ5mzN4-wo08gR79F7H2zlLUtDID74leM/edit?usp=sharing"
+                        target="_blank">
+                        &#9;acornpage 팀프로젝트 발표자료 보기
+                    </a>
+                </button>
+            </td>
+        </tr>
+    </table>
+
+    <img id="cat3" src="https://filmdaily.co/wp-content/uploads/2020/04/cute-cat-videos-lede-1300x882.jpg"/>
+    <p>
+        position: relative;
+    </p>
+</div> <!-- contentWrapper end  -->
+
+
+<div class="container">
+    <!----------- Footer ------------>
+    <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+            	<h2>Logo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                <p>© 2014 BS3 UI Kit, All rights reserved</p>
+            </div>
+        	<div class="col-md-4 footer-nav animated fadeInUp">
+            	<h4>Menu —</h4>
+            	<div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+            	<div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="col-md-2 footer-social animated fadeInDown">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        	<div class="col-md-3 footer-ns animated fadeInRight">
+            	<h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://enfoplus.net">Prince J. Sargbah</a></p></section>
+</div><!-- footer end -->
+</body>
+</html>
