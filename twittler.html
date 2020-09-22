@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title>
+        종혁's twittler
+    </title>
+    <style>
+        .contentwrapper{
+            width: 40%;
+            margin: 0px auto;
+        }
+
+        .title{
+            background-color: #C3DAEC;
+            border: 5px solid #95C1E4;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .inputForm{
+            font-weight: bold;
+            background-color: #81B3DA;
+            margin-top: 20px;
+            padding: 20px 0px 20px 20px;
+        }
+
+        .twittlerList{
+            margin-top: 10px;
+        }
+
+        .twittlerList .newTweet{
+            background-color: #2B55B3;
+            padding: 15px 0px 15px 20px;
+        }
+
+        .commentparent{
+            background-color: #CFEBF7;
+            padding: 20px 20px 0px 20px;
+        }
+
+        .comment{
+            display: flex;
+            justify-content: space-between;
+            background-color: #CFEBF7;
+            border-bottom: 2px solid #B4B4B4;
+            padding-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+<div class="contentwrapper">
+<div class="title">
+    twittler
+</div><!-- title end -->
+
+<div class="inputForm">
+    <label for="UserName">UserName</label></br>
+    <input type="text" name="UserName" /></br></br>
+    <label for="Comment">Comment</label></br>
+    <textarea name="Comment" rows="5" cols="60"></textarea></br></br>
+    <button style="font-weight: bold; width: 80px; height: 30px;">Tweet!</button>
+</div><!-- inputForm end -->
+
+<div class="twittlerList">
+    <div class="newTweet">
+        <button style="font-weight: bold; width: 200px; height: 30px;">check new tweet</button>
+    </div>
+    
+    <div class="commentparent">
+        <div class="comment">
+            <div>
+                <span style="font-weight: bold;">ingikim</span></br>
+                <span>Welcome to Code States #codestates</span>
+            </div>
+            <div>
+                <span>2019-01-03 12:30:20</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="commentparent">
+        <div class="comment">
+            <div>
+                <span style="font-weight: bold;">satya</span></br>
+                <span>this is test message #pair #programming</span>
+            </div>
+            <div>
+                <span>2019-01-04 18:30:20</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="commentparent">
+        <div class="comment">
+            <div>
+                <span style="font-weight: bold;">sundar</span></br>
+                <span>code now! #work #hard</span>
+            </div>
+            <div>
+                <span>2019-01-05 07:30:20</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="commentparent">
+        <div class="comment">
+            <div>
+                <span style="font-weight: bold;">steve</span></br>
+                <span>Stay hungry, and stay foolish</span>
+            </div>
+            <div>
+                <span>2015-01-03 12:30:20</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="commentparent" style="padding-bottom: 20px;">
+        <div class="comment">
+            <div>
+                <span style="font-weight: bold;">tim</span></br>
+                <span>education for real world</span>
+            </div>
+            <div>
+                <span>2019-01-04 18:30:20</span>
+            </div>
+        </div>
+    </div>
+
+</div><!-- twittlerList end -->
+</div><!-- contentwrapper end -->
+</body>
+</html> 
