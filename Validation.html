@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>유효성 검사</title>
+    <style>
+        div.contentwrapper{
+            text-align: center;
+            margin: 0px auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="contentwrapper">
+    <h1>유효성 검사</h1>
+    <label for="id">ID</label>
+    <input type="text" name="id" id="id"/>
+    <button id="idVali">ID 유효성 검사</button>
+    <div id="idErr">ID는 4 ~ 12글자 영문과 숫자로 작성해주세요</div>
+    </br></br>
+
+    <!-- <label for="password">PW</label></br>
+    <input type="password" name="password" id="password"></br></br> -->
+
+    <label for="tel">Tel</label></br>
+    <input type="text" name="tel" id="tel"/>
+    <div id="telErr">전화번호는 11자리 숫자로 작성해주세요</div>
+    </br></br>
+
+    <label for="jumin">주민번호 앞자리</label></br>
+    <input type="text" name="jumin" id="jumin"/></br>
+    <div id="juminErr">6자리 숫자로 작성해주세요</div>
+</div>
+<script>
+    'use strict';
+
+    let idValidStr = /^[a-zA-Z0-9]{4,12}$/
+    // let emailValidStr= /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+    let telValidStr= /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/
+    let juminValidStr= /^[0-9]{6}$/
+
+    let idInput=document.querySelector("#id");
+    // let pwInput=document.querySelector("#password");
+    let telInput=document.querySelector("#tel");
+    let juminInput=document.querySelector("#jumin");
+
+    let idValiBtn=document.getElementById("idVali");
+    
+
+    idValiBtn.addEventListener("click",function(){
+        if(idInput.value.match(idValidStr)){
+            alert("사용할 수 있는 아이디 입니다.")
+        }else{
+            alert("아이디 형식에 맞지 않습니다.")
+        }
+    })
+
+    idInput.addEventListener('keyup',function(){
+        if(idInput.value.match(idValidStr)){
+            document.getElementById('idErr').style.display="none";
+        }else{
+            document.getElementById('idErr').style.display="block";
+        }
+    })
+
+    telInput.addEventListener('keyup',function(){
+        if(telInput.value.match(telValidStr)){
+            document.getElementById('telErr').style.display="none";
+        }else{
+            document.getElementById('telErr').style.display="block";
+        }
+    })
+
+    juminInput.addEventListener('keyup',function(){
+        if(juminInput.value.match(juminValidStr)){
+            document.getElementById('juminErr').style.display="none";
+        }else{
+            document.getElementById('juminErr').style.display="block";
+        }
+    })
+</script>
+</body>
+</html>
